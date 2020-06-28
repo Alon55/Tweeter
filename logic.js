@@ -44,8 +44,6 @@ const Tweeter = function () {
     let removePost = function (postID) {
         for (let i = 0; i < _posts.length; i++) {
             if (postID === _posts[i].id){
-                console.log(_posts[i])
-                console.log(_posts.indexOf(_posts[i]))
                 _posts.splice((_posts.indexOf(_posts[i])), 1)
             }       
         }
