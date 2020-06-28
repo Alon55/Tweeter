@@ -17,7 +17,7 @@ function post() {
 
 
 $('#posts').on ('click', '.delete', function() {
-    tweeter.removePost($(this).closest($('#posts')).find('h3').attr('id'))
+    tweeter.removePost($(this).closest($('.post')).find('.post-text').attr('id'))
     renderer.renderPosts(tweeter.getPosts())
 }
 
